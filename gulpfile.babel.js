@@ -10,7 +10,7 @@ import webpackConfig from './webpack.config'
 import webpackStream from 'webpack-stream'
 
 gulp.task('test',    ['build:test', 'build:test:ejs', 'test:e2e']);
-gulp.task('release', ['build:prod', 'build:prod:min']);
+gulp.task('release', ['build:prod', 'build:prod:min', 'build:prod:common']);
 
 gulp.task('build:prod', () => {
     let config = Object.create(webpackConfig);
@@ -22,6 +22,16 @@ gulp.task('build:prod', () => {
     ]);
 
     return webpackStream(config, webpack)
+        .pipe(gulp.dest("dist"));
+});
+
+gulp.task('build:prod:common', () => {
+    let config                  = Object.create(webpackConfig);
+    config.plugins              = config.plugins.concat([new webpack.optimize.UglifyJsPlugin()]);
+    config.output.libraryTarget = 'umd';
+
+    return webpackStream(config, webpack)
+        .pipe(rename({ extname: '.common.js' }))
         .pipe(gulp.dest("dist"));
 });
 

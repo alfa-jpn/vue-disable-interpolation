@@ -1,8 +1,8 @@
 {
   "name": "vue-disable-interpolation",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Disable vue interpolation(mustache).",
-  "main": "dist/vue-disable-interpolation.js",
+  "main": "dist/vue-disable-interpolation.common.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

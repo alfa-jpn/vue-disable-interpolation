@@ -1,7 +1,9 @@
 const config = {
     entry:  './src/index.js',
     output: {
-        filename: 'vue-disable-interpolation.js'
+        library:       'VueDisableInterpolation',
+        libraryTarget: 'var',
+        filename:      'vue-disable-interpolation.js'
     },
     module: {
         loaders: [{

@@ -28,12 +28,15 @@ $ gulp release
 
 ```shell
 $ gulp test
+
+# with version (default 2.0.0)
+$ VUE_VERSION=2.3.4 gulp test
 ```
 
 ## Contributing
 
 1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+1. Create your feature branch (`git checkout -b my-new-feature`)
+1. Commit your changes (`git commit -am 'Add some feature'`)
+1. Push to the branch (`git push origin my-new-feature`)
+1. Create new Pull Request (**Please not include `dist/` files**)

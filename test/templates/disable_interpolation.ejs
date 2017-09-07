@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/<%= vue_version %>/vue.min.js"></script>
+    <script src="./vue-disable-interpolation.js"></script>
+</head>
+<body>
+    <div id="app" v-bind:data-status='"ready"'>
+        <span id="mustache">{{ invisible }}</span>
+        <span id="mustache-attr" data-attr="{{ invisible }}"></span>
+        <span id="directive" v-text="visible"></span>
+    </div>
+
+    <script>
+        Vue.use(VueDisableInterpolation);
+
+        new Vue({
+            el: '#app',
+            data: {
+                visible:   '--OK--',
+                invisible: '--NG--'
+            }
+        })
+    </script>
+</body>
+</html>

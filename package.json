@@ -1,13 +1,15 @@
 {
   "name": "vue-disable-interpolation",
   "version": "0.0.1",
-  "description": "",
+  "description": "Disable vue interpolation(mustache).",
   "main": "dist/vue-disable-interpolation.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "vue"
+    "vue",
+    "disable interpolation",
+    "disable mustache"
   ],
   "author": "alfa-jpn",
   "license": "ISC",

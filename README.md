@@ -3,6 +3,14 @@ Disable interpolation (mustache style) of vue.
 
 [![Build Status](https://travis-ci.org/alfa-jpn/vue-disable-interpolation.svg?branch=master)](https://travis-ci.org/alfa-jpn/vue-disable-interpolation)
 
+## Install
+
+node
+
+```shell
+npm install vue-disable-interpolation
+```
+
 ## Usage
 
 ```js
@@ -11,7 +19,7 @@ Vue.use(VueDisableInterpolation)
 
 ## Development
 
-### Install
+### Setup
 
 - gulp
   - `npm install -g gulp`

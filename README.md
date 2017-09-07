@@ -1,4 +1,7 @@
 # vue-disable-interpolation
+Disable interpolation (mustache style) of vue.
+
+[![Build Status](https://travis-ci.org/alfa-jpn/vue-disable-interpolation.svg?branch=master)](https://travis-ci.org/alfa-jpn/vue-disable-interpolation)
 
 ## Usage
 
